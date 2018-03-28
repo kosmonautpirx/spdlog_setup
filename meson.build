@@ -9,5 +9,5 @@ src_utest = [
     'src/unit_test/unit_test.cpp',
 ]
 
-utest_exec = executable('utest', src_test, include_directories : inc)
+utest_exec = executable('utest', src_utest, include_directories : inc)
 test('utest', utest_exec)
