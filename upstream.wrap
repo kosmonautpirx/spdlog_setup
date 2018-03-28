@@ -1,0 +1,6 @@
+[wrap-file]
+directory = spdlog_setup-0.3.0-alpha.1
+
+source_url = https://github.com/guangie88/spdlog_setup/archive/v0.3.0-alpha.1.tar.gz
+source_filename = v0.3.0-alpha.1.tar.gz
+source_hash = 4e915489dc3e0f041d55bb9ed1d9f214d0a88687b3dfe420789847e1504516d1
