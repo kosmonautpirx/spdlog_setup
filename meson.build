@@ -5,9 +5,13 @@ inc = include_directories('include')
 
 spdlog_setup_dep = declare_dependency(include_directories : inc)
 
-src_utest = [
-    'src/unit_test/unit_test.cpp',
-]
+# atm, unittests do not compile, as required Catch2 is not
+# part of release
+if get_option('SPDLOG_SETUP_INCLUDE_UNIT_TESTS') == true
+	src_utest = [
+	    'src/unit_test/unit_test.cpp',
+	]
 
-utest_exec = executable('utest', src_utest, include_directories : inc)
-test('utest', utest_exec)
+	utest_exec = executable('utest', src_utest, include_directories : inc)
+	test('utest', utest_exec)
+fi
