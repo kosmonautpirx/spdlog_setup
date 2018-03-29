@@ -14,4 +14,4 @@ if get_option('SPDLOG_SETUP_INCLUDE_UNIT_TESTS') == true
 
 	utest_exec = executable('utest', src_utest, include_directories : inc)
 	test('utest', utest_exec)
-fi
+endif

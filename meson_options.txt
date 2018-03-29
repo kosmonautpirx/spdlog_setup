@@ -1,1 +1,1 @@
-option('SPDLOG_SETUP_INCLUDE_UNIT_TESTS', type : 'boolean', value : false,, yield : true)
+option('SPDLOG_SETUP_INCLUDE_UNIT_TESTS', type : 'boolean', value : false)
